@@ -1,0 +1,192 @@
+{
+  "token": {
+    "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+  },
+  "masterPlanet": {
+    "56": "0xDDA8f20B4Cb22FBb6a1D027327486dE57bcc32e9"
+  },
+  "timelock": {
+    "56": "0x2d77D8F56E73a3144D5C0e93520cb46009621c49"
+  },
+  "referral": {
+    "56": "0x71b9327528f19094b9daDf88E8BD62629A20B92B"
+  },
+  "factory": {
+    "56": "0xBCfCcbde45cE874adCB698cC183deBcF17952812"
+  },
+  "router": {
+    "56": "0x05ff2b0db69458a0750badebc4f9e13add608c7f"
+  },
+  "farms": [
+    {
+      "pid": 0,
+      "risk": 5,
+      "lpSymbol": "MARS-BUSD LP",
+      "lpAddresses": {
+        "56": "0x441Afa285b9CA31c5AEea74E7CB906b0457F6655"
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "BUSD",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+      },
+      "isTokenOnly": false
+    },
+    {
+      "pid": 1,
+      "risk": 5,
+      "lpSymbol": "MARS-BNB LP",
+      "lpAddresses": {
+        "56": "0x9ccB3f264CF63eaf502Ae197a6f052Cc55B2eF66"
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "BNB",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+      },
+      "isTokenOnly": false
+    },
+    {
+      "pid": 2,
+      "risk": 3,
+      "lpSymbol": "BNB-BUSD LP",
+      "lpAddresses": {
+        "56": "0x1B96B92314C44b159149f7E0303511fB2Fc4774f"
+      },
+      "tokenSymbol": "BNB",
+      "quoteTokenSymbol": "BUSD",
+      "tokenAddresses": {
+        "56": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
+      },
+      "isTokenOnly": false
+    },
+    {
+      "pid": 3,
+      "risk": 4,
+      "lpSymbol": "MARS-mAAPL LP",
+      "lpAddresses": {
+        "56": "0x982Bd277f37B1465aB98fE5dA527F29626A6b933"
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mAAPL",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
+      },
+      "isTokenOnly": false
+    },
+    {
+      "pid": 4,
+      "risk": 4,
+      "lpSymbol": "MARS-mMSFT LP",
+      "lpAddresses": {
+        "56": "0x709F6785d5487016bE83f4dBB5259543A0f164b4"
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mMSFT",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
+      },
+      "isTokenOnly": false
+    },
+    {
+      "pid": 5,
+      "risk": 4,
+      "lpSymbol": "MARS-mAMZN LP",
+      "lpAddresses": {
+        "56": "0x769A6e3073FB9eD7fe56541bEB93706d8C1A4B2e"
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mAMZN",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
+      },
+      "isTokenOnly": false
+    },
+    {
+      "pid": 6,
+      "risk": 4,
+      "lpSymbol": "MARS",
+      "lpAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "MARS",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "isTokenOnly": true
+    },
+    {
+      "pid": 7,
+      "risk": 1,
+      "lpSymbol": "mAAPL",
+      "lpAddresses": {
+        "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
+      },
+      "tokenSymbol": "mAAPL",
+      "quoteTokenSymbol": "mAAPL",
+      "tokenAddresses": {
+        "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
+      },
+      "isTokenOnly": true
+    },
+    {
+      "pid": 8,
+      "risk": 1,
+      "lpSymbol": "mMSFT",
+      "lpAddresses": {
+        "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
+      },
+      "tokenSymbol": "mMSFT",
+      "quoteTokenSymbol": "mMSFT",
+      "tokenAddresses": {
+        "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
+      },
+      "isTokenOnly": true
+    },
+    {
+      "pid": 9,
+      "risk": 1,
+      "lpSymbol": "mAMZN",
+      "lpAddresses": {
+        "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
+      },
+      "tokenSymbol": "mAMZN",
+      "quoteTokenSymbol": "mAMZN",
+      "tokenAddresses": {
+        "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
+      },
+      "isTokenOnly": true
+    }
+  ]
+}
