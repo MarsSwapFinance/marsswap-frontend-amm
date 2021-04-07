@@ -1,0 +1,2 @@
+(this["webpackJsonpmarsswap-frontend-amm"]=this["webpackJsonpmarsswap-frontend-amm"]||[]).push([[8],{625:function(n,o){},626:function(n,o){},635:function(n,o){},636:function(n,o){},656:function(n,o){},659:function(n,o){},660:function(n,o){},665:function(n,o){},669:function(n,o){},723:function(n,o){}}]);
+//# sourceMappingURL=8.a38ed90c.chunk.js.map
