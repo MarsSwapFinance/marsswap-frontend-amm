@@ -116,6 +116,13 @@
       "decimals": 18
     },
     {
+      "name": "Mirror Coinbase Token",
+      "symbol": "mCOIN",
+      "address": "0x49022089e78a8D46Ec87A3AF86a1Db6c189aFA6f",
+      "chainId": 56,
+      "decimals": 18
+    },
+    {
       "name": "AUTOv2",
       "symbol": "AUTO",
       "address": "0xa184088a740c695e156f91f5cc086a06bb78b827",

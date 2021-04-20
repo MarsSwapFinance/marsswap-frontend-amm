@@ -29,8 +29,9 @@ export const mSLV = new Token(ChainId.MAINNET, '0x211e763d0b9311c08EC92D72DdC20A
 export const mUSO = new Token(ChainId.MAINNET, '0x9cDDF33466cE007676C827C76E799F5109f1843C', 18, 'mUSO', 'United States Oil Fund')
 export const mVIXY = new Token(ChainId.MAINNET, '0x92E744307694Ece235cd02E82680ec37c657D23E', 18, 'mVIXY', 'ProShares VIX Short-Term Futures ETF')
 export const mFB = new Token(ChainId.MAINNET, '0x5501F4713020cf299C3C5929da549Aab3592E451', 18, 'mFB', 'Facebook')
+export const mCOIN = new Token(ChainId.MAINNET, '0x49022089e78a8D46Ec87A3AF86a1Db6c189aFA6f', 18, 'mCOIN', 'Coinbase')
 
-export const MIRROR_TOKENS = [mAAPL, mGOOGL, mTSLA, mNFLX, mQQQ, mTWTR, mMSFT, mAMZN, mBABA, mIAU, mSLV, mUSO, mVIXY, mFB]
+export const MIRROR_TOKENS = [mAAPL, mGOOGL, mTSLA, mNFLX, mQQQ, mTWTR, mMSFT, mAMZN, mBABA, mIAU, mSLV, mUSO, mVIXY, mFB, mCOIN]
 
 export const DAI = new Token(ChainId.MAINNET, '0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3', 18, 'DAI', 'Dai Stablecoin')
 export const USDT = new Token(ChainId.MAINNET, '0x55d398326f99059ff775485246999027b3197955', 18, 'USDT', 'Tether USD')

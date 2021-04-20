@@ -6,7 +6,7 @@
     "56": "0xDDA8f20B4Cb22FBb6a1D027327486dE57bcc32e9"
   },
   "timelock": {
-    "56": "0x2d77D8F56E73a3144D5C0e93520cb46009621c49"
+    "56": "0x26f5CC925f9295591D6Bf50085F182C245B2EC0C"
   },
   "referral": {
     "56": "0x71b9327528f19094b9daDf88E8BD62629A20B92B"
@@ -23,7 +23,7 @@
       "risk": 5,
       "lpSymbol": "MARS-BUSD LP",
       "lpAddresses": {
-        "56": "0x441Afa285b9CA31c5AEea74E7CB906b0457F6655"
+        "56": ""
       },
       "tokenSymbol": "MARS",
       "quoteTokenSymbol": "BUSD",
@@ -33,14 +33,15 @@
       "quoteTokenAdresses": {
         "56": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
       },
-      "isTokenOnly": false
+      "isTokenOnly": false,
+      "depositFeeBP": 0
     },
     {
       "pid": 1,
       "risk": 5,
       "lpSymbol": "MARS-BNB LP",
       "lpAddresses": {
-        "56": "0x9ccB3f264CF63eaf502Ae197a6f052Cc55B2eF66"
+        "56": ""
       },
       "tokenSymbol": "MARS",
       "quoteTokenSymbol": "BNB",
@@ -50,14 +51,15 @@
       "quoteTokenAdresses": {
         "56": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
       },
-      "isTokenOnly": false
+      "isTokenOnly": false,
+      "depositFeeBP": 0
     },
     {
       "pid": 2,
       "risk": 3,
       "lpSymbol": "BNB-BUSD LP",
       "lpAddresses": {
-        "56": "0x1B96B92314C44b159149f7E0303511fB2Fc4774f"
+        "56": ""
       },
       "tokenSymbol": "BNB",
       "quoteTokenSymbol": "BUSD",
@@ -67,14 +69,15 @@
       "quoteTokenAdresses": {
         "56": "0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56"
       },
-      "isTokenOnly": false
+      "isTokenOnly": false,
+      "depositFeeBP": 395
     },
     {
       "pid": 3,
       "risk": 4,
       "lpSymbol": "MARS-mAAPL LP",
       "lpAddresses": {
-        "56": "0x982Bd277f37B1465aB98fE5dA527F29626A6b933"
+        "56": ""
       },
       "tokenSymbol": "MARS",
       "quoteTokenSymbol": "mAAPL",
@@ -84,14 +87,15 @@
       "quoteTokenAdresses": {
         "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
       },
-      "isTokenOnly": false
+      "isTokenOnly": false,
+      "depositFeeBP": 0
     },
     {
       "pid": 4,
       "risk": 4,
       "lpSymbol": "MARS-mMSFT LP",
       "lpAddresses": {
-        "56": "0x709F6785d5487016bE83f4dBB5259543A0f164b4"
+        "56": ""
       },
       "tokenSymbol": "MARS",
       "quoteTokenSymbol": "mMSFT",
@@ -101,14 +105,15 @@
       "quoteTokenAdresses": {
         "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
       },
-      "isTokenOnly": false
+      "isTokenOnly": false,
+      "depositFeeBP": 0
     },
     {
       "pid": 5,
       "risk": 4,
       "lpSymbol": "MARS-mAMZN LP",
       "lpAddresses": {
-        "56": "0x769A6e3073FB9eD7fe56541bEB93706d8C1A4B2e"
+        "56": ""
       },
       "tokenSymbol": "MARS",
       "quoteTokenSymbol": "mAMZN",
@@ -118,14 +123,231 @@
       "quoteTokenAdresses": {
         "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
       },
-      "isTokenOnly": false
+      "isTokenOnly": false,
+      "depositFeeBP": 0
     },
     {
       "pid": 6,
       "risk": 4,
+      "lpSymbol": "MARS-mGOOGL LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mGOOGL",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x62D71B23bF15218C7d2D7E48DBbD9e9c650B173f"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 7,
+      "risk": 4,
+      "lpSymbol": "MARS-mTSLA LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mTSLA",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xF215A127A196e3988C09d052e16BcFD365Cd7AA3"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 8,
+      "risk": 4,
+      "lpSymbol": "MARS-mCOIN LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mCOIN",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x49022089e78a8D46Ec87A3AF86a1Db6c189aFA6f"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 9,
+      "risk": 4,
+      "lpSymbol": "MARS-mNFLX LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mNFLX",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xa04F060077D90Fe2647B61e4dA4aD1F97d6649dc"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 10,
+      "risk": 4,
+      "lpSymbol": "MARS-mFB LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mFB",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x5501F4713020cf299C3C5929da549Aab3592E451"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 11,
+      "risk": 4,
+      "lpSymbol": "MARS-mTWTR LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mTWTR",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x7426Ab52A0e057691E2544fae9C8222e958b2cfB"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 12,
+      "risk": 4,
+      "lpSymbol": "MARS-mBABA LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mBABA",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xcA2f75930912B85d8B2914Ad06166483c0992945"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 13,
+      "risk": 4,
+      "lpSymbol": "MARS-mQQQ LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mQQQ",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x1Cb4183Ac708e07511Ac57a2E45A835F048D7C56"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 14,
+      "risk": 4,
+      "lpSymbol": "MARS-mIAU LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mIAU",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x1658AeD6C7dbaB2Ddbd8f5D898b0e9eAb0305813"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 15,
+      "risk": 4,
+      "lpSymbol": "MARS-mSLV LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mSLV",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x211e763d0b9311c08EC92D72DdC20AB024b6572A"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 16,
+      "risk": 4,
+      "lpSymbol": "MARS-mUSO LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mUSO",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x9cDDF33466cE007676C827C76E799F5109f1843C"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 17,
+      "risk": 4,
+      "lpSymbol": "MARS-mVIXY LP",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "MARS",
+      "quoteTokenSymbol": "mVIXY",
+      "tokenAddresses": {
+        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x92E744307694Ece235cd02E82680ec37c657D23E"
+      },
+      "isTokenOnly": false,
+      "depositFeeBP": 0
+    },
+    {
+      "pid": 18,
+      "risk": 4,
       "lpSymbol": "MARS",
       "lpAddresses": {
-        "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
+        "56": ""
       },
       "tokenSymbol": "MARS",
       "quoteTokenSymbol": "MARS",
@@ -135,14 +357,15 @@
       "quoteTokenAdresses": {
         "56": "0xDBB53445361a53e2609d1935DB5d03D1e75cfFE0"
       },
-      "isTokenOnly": true
+      "isTokenOnly": true,
+      "depositFeeBP": 0
     },
     {
-      "pid": 7,
+      "pid": 19,
       "risk": 1,
       "lpSymbol": "mAAPL",
       "lpAddresses": {
-        "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
+        "56": ""
       },
       "tokenSymbol": "mAAPL",
       "quoteTokenSymbol": "mAAPL",
@@ -152,14 +375,15 @@
       "quoteTokenAdresses": {
         "56": "0x900AEb8c40b26A8f8DfAF283F884b03EE7Abb3Ec"
       },
-      "isTokenOnly": true
+      "isTokenOnly": true,
+      "depositFeeBP": 395
     },
     {
-      "pid": 8,
+      "pid": 20,
       "risk": 1,
       "lpSymbol": "mMSFT",
       "lpAddresses": {
-        "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
+        "56": ""
       },
       "tokenSymbol": "mMSFT",
       "quoteTokenSymbol": "mMSFT",
@@ -169,14 +393,15 @@
       "quoteTokenAdresses": {
         "56": "0x0ab06caa3Ca5d6299925EfaA752A2D2154ECE929"
       },
-      "isTokenOnly": true
+      "isTokenOnly": true,
+      "depositFeeBP": 395
     },
     {
-      "pid": 9,
+      "pid": 21,
       "risk": 1,
       "lpSymbol": "mAMZN",
       "lpAddresses": {
-        "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
+        "56": ""
       },
       "tokenSymbol": "mAMZN",
       "quoteTokenSymbol": "mAMZN",
@@ -186,7 +411,224 @@
       "quoteTokenAdresses": {
         "56": "0x3947B992DC0147D2D89dF0392213781b04B25075"
       },
-      "isTokenOnly": true
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 22,
+      "risk": 1,
+      "lpSymbol": "mGOOGL",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mGOOGL",
+      "quoteTokenSymbol": "mGOOGL",
+      "tokenAddresses": {
+        "56": "0x62D71B23bF15218C7d2D7E48DBbD9e9c650B173f"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x62D71B23bF15218C7d2D7E48DBbD9e9c650B173f"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 23,
+      "risk": 1,
+      "lpSymbol": "mTSLA",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mTSLA",
+      "quoteTokenSymbol": "mTSLA",
+      "tokenAddresses": {
+        "56": "0xF215A127A196e3988C09d052e16BcFD365Cd7AA3"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xF215A127A196e3988C09d052e16BcFD365Cd7AA3"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 24,
+      "risk": 1,
+      "lpSymbol": "mCOIN",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mCOIN",
+      "quoteTokenSymbol": "mCOIN",
+      "tokenAddresses": {
+        "56": "0x49022089e78a8D46Ec87A3AF86a1Db6c189aFA6f"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x49022089e78a8D46Ec87A3AF86a1Db6c189aFA6f"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 25,
+      "risk": 1,
+      "lpSymbol": "mNFLX",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mNFLX",
+      "quoteTokenSymbol": "mNFLX",
+      "tokenAddresses": {
+        "56": "0xa04F060077D90Fe2647B61e4dA4aD1F97d6649dc"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xa04F060077D90Fe2647B61e4dA4aD1F97d6649dc"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 26,
+      "risk": 1,
+      "lpSymbol": "mFB",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mFB",
+      "quoteTokenSymbol": "mFB",
+      "tokenAddresses": {
+        "56": "0x5501F4713020cf299C3C5929da549Aab3592E451"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x5501F4713020cf299C3C5929da549Aab3592E451"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 27,
+      "risk": 1,
+      "lpSymbol": "mTWTR",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mTWTR",
+      "quoteTokenSymbol": "mTWTR",
+      "tokenAddresses": {
+        "56": "0x7426Ab52A0e057691E2544fae9C8222e958b2cfB"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x7426Ab52A0e057691E2544fae9C8222e958b2cfB"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 28,
+      "risk": 1,
+      "lpSymbol": "mBABA",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mBABA",
+      "quoteTokenSymbol": "mBABA",
+      "tokenAddresses": {
+        "56": "0xcA2f75930912B85d8B2914Ad06166483c0992945"
+      },
+      "quoteTokenAdresses": {
+        "56": "0xcA2f75930912B85d8B2914Ad06166483c0992945"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 29,
+      "risk": 1,
+      "lpSymbol": "mQQQ",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mQQQ",
+      "quoteTokenSymbol": "mQQQ",
+      "tokenAddresses": {
+        "56": "0x1Cb4183Ac708e07511Ac57a2E45A835F048D7C56"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x1Cb4183Ac708e07511Ac57a2E45A835F048D7C56"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 30,
+      "risk": 1,
+      "lpSymbol": "mIAU",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mIAU",
+      "quoteTokenSymbol": "mIAU",
+      "tokenAddresses": {
+        "56": "0x1658AeD6C7dbaB2Ddbd8f5D898b0e9eAb0305813"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x1658AeD6C7dbaB2Ddbd8f5D898b0e9eAb0305813"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 31,
+      "risk": 1,
+      "lpSymbol": "mSLV",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mSLV",
+      "quoteTokenSymbol": "mSLV",
+      "tokenAddresses": {
+        "56": "0x211e763d0b9311c08EC92D72DdC20AB024b6572A"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x211e763d0b9311c08EC92D72DdC20AB024b6572A"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 32,
+      "risk": 1,
+      "lpSymbol": "mUSO",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mUSO",
+      "quoteTokenSymbol": "mUSO",
+      "tokenAddresses": {
+        "56": "0x9cDDF33466cE007676C827C76E799F5109f1843C"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x9cDDF33466cE007676C827C76E799F5109f1843C"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
+    },
+    {
+      "pid": 33,
+      "risk": 1,
+      "lpSymbol": "mVIXY",
+      "lpAddresses": {
+        "56": ""
+      },
+      "tokenSymbol": "mVIXY",
+      "quoteTokenSymbol": "mVIXY",
+      "tokenAddresses": {
+        "56": "0x92E744307694Ece235cd02E82680ec37c657D23E"
+      },
+      "quoteTokenAdresses": {
+        "56": "0x92E744307694Ece235cd02E82680ec37c657D23E"
+      },
+      "isTokenOnly": true,
+      "depositFeeBP": 395
     }
   ]
 }

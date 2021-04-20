@@ -37,6 +37,11 @@ const config: MenuEntry[] = [
     icon: 'RoadmapIcon',
     href: 'https://docs.marsswap.finance/roadmap',
   },
+  {
+    label: 'Audit',
+    icon: 'AuditIcon',
+    href: 'https://marsswap.finance/audits/techrate.pdf',
+  },
   // {
   //   label: 'Info',
   //   icon: 'InfoIcon',
@@ -64,7 +69,7 @@ const config: MenuEntry[] = [
         href: 'https://medium.com/marsswap',
       },
       {
-        label: 'White Paper',
+        label: 'Whitepaper',
         href: 'https://marsswap.finance/whitepaper.pdf',
       },
     ],

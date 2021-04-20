@@ -38,11 +38,16 @@ export default function CurrencyLogo({
     if (currency === ETHER) return []
 
     if (currency instanceof Token) {
+      const locations = [
+        `https://app.marsswap.finance/images/tokens/${currency?.symbol?.toLocaleLowerCase()}.png`,
+        getTokenLogoURL(currency.address)
+      ]
+
       if (currency instanceof WrappedTokenInfo) {
-        return [...uriLocations, `/images/coins/${currency?.symbol ?? 'token'}.png`, getTokenLogoURL(currency.address)]
+        return [...uriLocations, ...locations]
       }
 
-      return [`/images/coins/${currency?.symbol ?? 'token'}.png`, getTokenLogoURL(currency.address)]
+      return locations
     }
     return []
   }, [currency, uriLocations])
