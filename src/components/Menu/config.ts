@@ -5,32 +5,36 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://app.marsswap.finance/',
+    href: '/',
   },
   {
-    label: 'Exchange',
-    href: '/swap',
-    icon: "ExchangeIcon"
-  },
-  {
-    label: 'Liquidity',
-    href: '/pool',
-    icon: 'LiquidityIcon'
+    label: "Trade",
+    icon: "TradeIcon",
+    items: [
+      {
+        label: "Exchange",
+        href: "https://exchange.marsswap.finance/swap",
+      },
+      {
+        label: "Liquidity",
+        href: "https://exchange.marsswap.finance/pool",
+      },
+    ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: 'https://app.marsswap.finance/farms',
+    href: '/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: 'https://app.marsswap.finance/pools',
+    href: '/pools',
   },
   {
     label: 'Referrals',
     icon: 'GroupsIcon',
-    href: 'https://app.marsswap.finance/referrals',
+    href: '/referrals',
   },
   {
     label: 'Roadmap',
@@ -38,9 +42,18 @@ const config: MenuEntry[] = [
     href: 'https://docs.marsswap.finance/roadmap',
   },
   {
-    label: 'Audit',
+    label: 'Audits',
     icon: 'AuditIcon',
-    href: 'https://marsswap.finance/audits/techrate.pdf',
+    items: [
+      {
+        label: 'RD Auditors',
+        href: 'https://marsswap.finance/audits/rdauditors.pdf'
+      },
+      {
+        label: 'Techrate',
+        href: 'https://marsswap.finance/audits/techrate.pdf'
+      }
+    ]
   },
   // {
   //   label: 'Info',
