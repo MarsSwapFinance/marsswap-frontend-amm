@@ -5,7 +5,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: '/',
+    href: 'https://app.marsswap.finance/',
   },
   {
     label: "Trade",
@@ -13,28 +13,28 @@ const config: MenuEntry[] = [
     items: [
       {
         label: "Exchange",
-        href: "https://exchange.marsswap.finance/swap",
+        href: "/swap",
       },
       {
         label: "Liquidity",
-        href: "https://exchange.marsswap.finance/pool",
+        href: "/pool",
       },
     ],
   },
   {
     label: 'Farms',
     icon: 'FarmIcon',
-    href: '/farms',
+    href: 'https://app.marsswap.finance/farms',
   },
   {
     label: 'Pools',
     icon: 'PoolIcon',
-    href: '/pools',
+    href: 'https://app.marsswap.finance/pools',
   },
   {
     label: 'Referrals',
     icon: 'GroupsIcon',
-    href: '/referrals',
+    href: 'https://app.marsswap.finance/referrals',
   },
   {
     label: 'Roadmap',
