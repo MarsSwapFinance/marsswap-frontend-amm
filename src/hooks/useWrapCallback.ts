@@ -1,4 +1,4 @@
-import { Currency, currencyEquals, ETHER, WETH } from '@pancakeswap-libs/sdk'
+import { Currency, currencyEquals, ETHER, WETH } from 'marsswap-sdk'
 import { useMemo } from 'react'
 import { tryParseAmount } from '../state/swap/hooks'
 import { useTransactionAdder } from '../state/transactions/hooks'
@@ -42,13 +42,13 @@ export default function useWrapCallback(
         execute:
           sufficientBalance && inputAmount
             ? async () => {
-                try {
-                  const txReceipt = await wethContract.deposit({ value: `0x${inputAmount.raw.toString(16)}` })
-                  addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} BNB to WBNB` })
-                } catch (error) {
-                  console.error('Could not deposit', error)
-                }
+              try {
+                const txReceipt = await wethContract.deposit({ value: `0x${inputAmount.raw.toString(16)}` })
+                addTransaction(txReceipt, { summary: `Wrap ${inputAmount.toSignificant(6)} BNB to WBNB` })
+              } catch (error) {
+                console.error('Could not deposit', error)
               }
+            }
             : undefined,
         inputError: sufficientBalance ? undefined : 'Insufficient ETH balance'
       }
@@ -58,18 +58,18 @@ export default function useWrapCallback(
         execute:
           sufficientBalance && inputAmount
             ? async () => {
-                try {
-                  const txReceipt = await wethContract.withdraw(`0x${inputAmount.raw.toString(16)}`)
-                  addTransaction(txReceipt, { summary: `Unwrap ${inputAmount.toSignificant(6)} WBNB to BNB` })
-                } catch (error) {
-                  console.error('Could not withdraw', error)
-                }
+              try {
+                const txReceipt = await wethContract.withdraw(`0x${inputAmount.raw.toString(16)}`)
+                addTransaction(txReceipt, { summary: `Unwrap ${inputAmount.toSignificant(6)} WBNB to BNB` })
+              } catch (error) {
+                console.error('Could not withdraw', error)
               }
+            }
             : undefined,
         inputError: sufficientBalance ? undefined : 'Insufficient WBNB balance'
       }
-    } 
-      return NOT_APPLICABLE
-    
+    }
+    return NOT_APPLICABLE
+
   }, [wethContract, chainId, inputCurrency, outputCurrency, inputAmount, balance, addTransaction])
 }

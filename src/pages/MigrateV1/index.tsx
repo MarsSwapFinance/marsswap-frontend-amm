@@ -1,4 +1,4 @@
-import { JSBI, Token } from '@pancakeswap-libs/sdk'
+import { JSBI, Token } from 'marsswap-sdk'
 import React, { useCallback, useContext, useMemo, useState, useEffect } from 'react'
 import { ThemeContext } from 'styled-components'
 import { AutoColumn } from '../../components/Column'
@@ -45,8 +45,8 @@ export default function MigrateV1() {
   const V1LiquidityTokens: Token[] = useMemo(() => {
     return chainId
       ? Object.keys(V1Exchanges).map(
-          (exchangeAddress) => new Token(chainId, exchangeAddress, 18, 'UNI-V1', 'Uniswap V1')
-        )
+        (exchangeAddress) => new Token(chainId, exchangeAddress, 18, 'UNI-V1', 'Uniswap V1')
+      )
       : []
   }, [chainId, V1Exchanges])
   const [V1LiquidityBalances, V1LiquidityBalancesLoading] = useTokenBalancesWithLoadingIndicator(

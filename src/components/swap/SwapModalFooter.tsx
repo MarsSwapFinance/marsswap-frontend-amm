@@ -1,6 +1,6 @@
-import { Trade, TradeType } from '@pancakeswap-libs/sdk'
+import { Trade, TradeType } from 'marsswap-sdk'
 import React, { useMemo, useState } from 'react'
-import { Text , Button } from '@pancakeswap-libs/uikit'
+import { Text, Button } from '@pancakeswap-libs/uikit'
 import { Repeat } from 'react-feather'
 
 import { Field } from '../../state/swap/actions'
@@ -93,7 +93,7 @@ export default function SwapModalFooter({
             <QuestionHelper text="For each trade a 0.2% fee is paid. 0.17% goes to liquidity providers and 0.03% goes to the PancakeSwap treasury." />
           </RowFixed>
           <Text fontSize="14px">
-            {realizedLPFee ? `${realizedLPFee?.toSignificant(6)  } ${  trade.inputAmount.currency.symbol}` : '-'}
+            {realizedLPFee ? `${realizedLPFee?.toSignificant(6)} ${trade.inputAmount.currency.symbol}` : '-'}
           </Text>
         </RowBetween>
       </AutoColumn>

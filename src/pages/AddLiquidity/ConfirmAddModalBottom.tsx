@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from '@pancakeswap-libs/sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from 'marsswap-sdk'
 import React from 'react'
 import { Button } from '@pancakeswap-libs/uikit'
 import { RowBetween, RowFixed } from '../../components/Row'
@@ -42,16 +42,14 @@ export function ConfirmAddModalBottom({
       <RowBetween>
         <Body>Rates</Body>
         <Body>
-          {`1 ${currencies[Field.CURRENCY_A]?.symbol} = ${price?.toSignificant(4)} ${
-            currencies[Field.CURRENCY_B]?.symbol
-          }`}
+          {`1 ${currencies[Field.CURRENCY_A]?.symbol} = ${price?.toSignificant(4)} ${currencies[Field.CURRENCY_B]?.symbol
+            }`}
         </Body>
       </RowBetween>
       <RowBetween style={{ justifyContent: 'flex-end' }}>
         <Body>
-          {`1 ${currencies[Field.CURRENCY_B]?.symbol} = ${price?.invert().toSignificant(4)} ${
-            currencies[Field.CURRENCY_A]?.symbol
-          }`}
+          {`1 ${currencies[Field.CURRENCY_B]?.symbol} = ${price?.invert().toSignificant(4)} ${currencies[Field.CURRENCY_A]?.symbol
+            }`}
         </Body>
       </RowBetween>
       <RowBetween>

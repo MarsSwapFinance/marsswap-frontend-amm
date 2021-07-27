@@ -1,5 +1,4 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
-import frontendConfig from 'frontend-config.json'
 
 const config: MenuEntry[] = [
   {
@@ -22,14 +21,14 @@ const config: MenuEntry[] = [
     ],
   },
   {
-    label: 'Farms',
+    label: 'MARS',
     icon: 'FarmIcon',
-    href: 'https://app.marsswap.finance/farms',
+    href: 'https://app.marsswap.finance/mars',
   },
   {
-    label: 'Pools',
-    icon: 'PoolIcon',
-    href: 'https://app.marsswap.finance/pools',
+    label: 'Stocks',
+    icon: 'StocksIcon',
+    href: 'https://app.marsswap.finance/stocks',
   },
   {
     label: 'Referrals',

@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from '@pancakeswap-libs/sdk'
+import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from 'marsswap-sdk'
 import { useCallback } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { usePair } from '../../data/Reserves'
@@ -50,23 +50,23 @@ export function useDerivedBurnInfo(
   const totalSupply = useTotalSupply(pair?.liquidityToken)
   const liquidityValueA =
     pair &&
-    totalSupply &&
-    userLiquidity &&
-    tokenA &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalSupply.raw, userLiquidity.raw)
+      totalSupply &&
+      userLiquidity &&
+      tokenA &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalSupply.raw, userLiquidity.raw)
       ? new TokenAmount(tokenA, pair.getLiquidityValue(tokenA, totalSupply, userLiquidity, false).raw)
       : undefined
   const liquidityValueB =
     pair &&
-    totalSupply &&
-    userLiquidity &&
-    tokenB &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalSupply.raw, userLiquidity.raw)
+      totalSupply &&
+      userLiquidity &&
+      tokenB &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalSupply.raw, userLiquidity.raw)
       ? new TokenAmount(tokenB, pair.getLiquidityValue(tokenB, totalSupply, userLiquidity, false).raw)
       : undefined
-  const liquidityValues: { [Field.CURRENCY_A]?: TokenAmount; [Field.CURRENCY_B]?: TokenAmount } = {
+  const liquidityValues: { [Field.CURRENCY_A]?: TokenAmount;[Field.CURRENCY_B]?: TokenAmount } = {
     [Field.CURRENCY_A]: liquidityValueA,
     [Field.CURRENCY_B]: liquidityValueB
   }
@@ -87,12 +87,12 @@ export function useDerivedBurnInfo(
   }
   // user specified a specific amount of token a or b
   else if (tokens[independentField]) {
-      const independentAmount = tryParseAmount(typedValue, tokens[independentField])
-      const liquidityValue = liquidityValues[independentField]
-      if (independentAmount && liquidityValue && !independentAmount.greaterThan(liquidityValue)) {
-        percentToRemove = new Percent(independentAmount.raw, liquidityValue.raw)
-      }
+    const independentAmount = tryParseAmount(typedValue, tokens[independentField])
+    const liquidityValue = liquidityValues[independentField]
+    if (independentAmount && liquidityValue && !independentAmount.greaterThan(liquidityValue)) {
+      percentToRemove = new Percent(independentAmount.raw, liquidityValue.raw)
     }
+  }
 
   const parsedAmounts: {
     [Field.LIQUIDITY_PERCENT]: Percent

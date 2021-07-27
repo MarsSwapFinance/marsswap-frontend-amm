@@ -1,6 +1,6 @@
 import { TransactionResponse } from '@ethersproject/abstract-provider'
 import { AddressZero } from '@ethersproject/constants'
-import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Token, TokenAmount, WETH } from '@pancakeswap-libs/sdk'
+import { Currency, CurrencyAmount, Fraction, JSBI, Percent, Token, TokenAmount, WETH } from 'marsswap-sdk'
 import { Button, Text } from '@pancakeswap-libs/uikit'
 import React, { useCallback, useMemo, useState } from 'react'
 import { Redirect, RouteComponentProps } from 'react-router'
@@ -48,8 +48,8 @@ function FormattedPoolCurrencyAmount({ currencyAmount }: { currencyAmount: Curre
       {currencyAmount.equalTo(JSBI.BigInt(0))
         ? '0'
         : currencyAmount.greaterThan(POOL_CURRENCY_AMOUNT_MIN)
-        ? currencyAmount.toSignificant(4)
-        : `<${POOL_CURRENCY_AMOUNT_MIN.toSignificant(1)}`}
+          ? currencyAmount.toSignificant(4)
+          : `<${POOL_CURRENCY_AMOUNT_MIN.toSignificant(1)}`}
     </>
   )
 }
@@ -147,9 +147,9 @@ function V1PairMigration({ liquidityTokenAmount, token }: { liquidityTokenAmount
   const minAmountToken: JSBI | undefined =
     v2SpotPrice && ethWorth
       ? ethWorth
-          .multiply(v2SpotPrice)
-          .multiply(JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(token.decimals)))
-          .multiply(ALLOWED_OUTPUT_MIN_PERCENT).quotient
+        .multiply(v2SpotPrice)
+        .multiply(JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(token.decimals)))
+        .multiply(ALLOWED_OUTPUT_MIN_PERCENT).quotient
       : tokenWorth?.numerator
 
   const addTransaction = useTransactionAdder()

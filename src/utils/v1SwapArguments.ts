@@ -1,5 +1,5 @@
 import { MaxUint256 } from '@ethersproject/constants'
-import { CurrencyAmount, ETHER, SwapParameters, Token, Trade, TradeOptions, TradeType } from '@pancakeswap-libs/sdk'
+import { CurrencyAmount, ETHER, SwapParameters, Token, Trade, TradeOptions, TradeType } from 'marsswap-sdk'
 import { getTradeVersion } from '../data/V1'
 import { Version } from '../hooks/useToggledVersion'
 
@@ -43,49 +43,49 @@ export default function v1SwapArguments(trade: Trade, options: Omit<TradeOptions
         args: [maximumAmountIn, minimumAmountOut, deadline, options.recipient],
         value: '0x0'
       }
-    } 
-      const outputToken = trade.outputAmount.currency
-      // should never happen, needed for type check
-      if (!(outputToken instanceof Token)) {
-        throw new Error('token to token')
-      }
-      return {
-        methodName: 'tokenToTokenTransferInput',
-        args: [maximumAmountIn, minimumAmountOut, '0x1', deadline, options.recipient, outputToken.address],
-        value: '0x0'
-      }
-    
-  } 
-    if (inputETH) {
-      return {
-        methodName: 'ethToTokenTransferOutput',
-        args: [minimumAmountOut, deadline, options.recipient],
-        value: maximumAmountIn
-      }
-    } if (outputETH) {
-      return {
-        methodName: 'tokenToEthTransferOutput',
-        args: [minimumAmountOut, maximumAmountIn, deadline, options.recipient],
-        value: '0x0'
-      }
-    } 
-      const output = trade.outputAmount.currency
-      if (!(output instanceof Token)) {
-        throw new Error('invalid output amount currency')
-      }
+    }
+    const outputToken = trade.outputAmount.currency
+    // should never happen, needed for type check
+    if (!(outputToken instanceof Token)) {
+      throw new Error('token to token')
+    }
+    return {
+      methodName: 'tokenToTokenTransferInput',
+      args: [maximumAmountIn, minimumAmountOut, '0x1', deadline, options.recipient, outputToken.address],
+      value: '0x0'
+    }
 
-      return {
-        methodName: 'tokenToTokenTransferOutput',
-        args: [
-          minimumAmountOut,
-          maximumAmountIn,
-          MaxUint256.toHexString(),
-          deadline,
-          options.recipient,
-          output.address
-        ],
-        value: '0x0'
-      }
-    
-  
+  }
+  if (inputETH) {
+    return {
+      methodName: 'ethToTokenTransferOutput',
+      args: [minimumAmountOut, deadline, options.recipient],
+      value: maximumAmountIn
+    }
+  } if (outputETH) {
+    return {
+      methodName: 'tokenToEthTransferOutput',
+      args: [minimumAmountOut, maximumAmountIn, deadline, options.recipient],
+      value: '0x0'
+    }
+  }
+  const output = trade.outputAmount.currency
+  if (!(output instanceof Token)) {
+    throw new Error('invalid output amount currency')
+  }
+
+  return {
+    methodName: 'tokenToTokenTransferOutput',
+    args: [
+      minimumAmountOut,
+      maximumAmountIn,
+      MaxUint256.toHexString(),
+      deadline,
+      options.recipient,
+      output.address
+    ],
+    value: '0x0'
+  }
+
+
 }

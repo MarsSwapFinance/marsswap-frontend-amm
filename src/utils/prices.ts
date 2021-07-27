@@ -1,5 +1,5 @@
-import { CurrencyAmount, Fraction, JSBI, Percent, TokenAmount, Trade } from '@pancakeswap-libs/sdk'
-import { BLOCKED_PRICE_IMPACT_NON_EXPERT , ALLOWED_PRICE_IMPACT_HIGH, ALLOWED_PRICE_IMPACT_LOW, ALLOWED_PRICE_IMPACT_MEDIUM } from '../constants'
+import { CurrencyAmount, Fraction, JSBI, Percent, TokenAmount, Trade } from 'marsswap-sdk'
+import { BLOCKED_PRICE_IMPACT_NON_EXPERT, ALLOWED_PRICE_IMPACT_HIGH, ALLOWED_PRICE_IMPACT_LOW, ALLOWED_PRICE_IMPACT_MEDIUM } from '../constants'
 
 import { Field } from '../state/swap/actions'
 import { basisPointsToPercent } from './index'
@@ -17,11 +17,11 @@ export function computeTradePriceBreakdown(
   const realizedLPFee = !trade
     ? undefined
     : ONE_HUNDRED_PERCENT.subtract(
-        trade.route.pairs.reduce<Fraction>(
-          (currentFee: Fraction): Fraction => currentFee.multiply(INPUT_FRACTION_AFTER_FEE),
-          ONE_HUNDRED_PERCENT
-        )
+      trade.route.pairs.reduce<Fraction>(
+        (currentFee: Fraction): Fraction => currentFee.multiply(INPUT_FRACTION_AFTER_FEE),
+        ONE_HUNDRED_PERCENT
       )
+    )
 
   // remove lp fees from price impact
   const priceImpactWithoutFeeFraction = trade && realizedLPFee ? trade.priceImpact.subtract(realizedLPFee) : undefined
@@ -67,10 +67,8 @@ export function formatExecutionPrice(trade?: Trade, inverted?: boolean): string 
     return ''
   }
   return inverted
-    ? `${trade.executionPrice.invert().toSignificant(6)} ${trade.inputAmount.currency.symbol} / ${
-        trade.outputAmount.currency.symbol
-      }`
-    : `${trade.executionPrice.toSignificant(6)} ${trade.outputAmount.currency.symbol} / ${
-        trade.inputAmount.currency.symbol
-      }`
+    ? `${trade.executionPrice.invert().toSignificant(6)} ${trade.inputAmount.currency.symbol} / ${trade.outputAmount.currency.symbol
+    }`
+    : `${trade.executionPrice.toSignificant(6)} ${trade.outputAmount.currency.symbol} / ${trade.inputAmount.currency.symbol
+    }`
 }

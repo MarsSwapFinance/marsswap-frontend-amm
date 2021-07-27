@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useState } from 'react'
 import { TransactionResponse } from '@ethersproject/abstract-provider'
-import { JSBI, Token, TokenAmount, WETH, Fraction, Percent, CurrencyAmount } from '@pancakeswap-libs/sdk'
+import { JSBI, Token, TokenAmount, WETH, Fraction, Percent, CurrencyAmount } from 'marsswap-sdk'
 import { Button } from '@pancakeswap-libs/uikit'
 import { Redirect, RouteComponentProps } from 'react-router'
 import { AddressZero } from '@ethersproject/constants'
@@ -113,9 +113,8 @@ function V1PairRemoval({
         </div>
       </LightCard>
       <DarkGray style={{ textAlign: 'center' }}>
-        {`Your Uniswap V1 ${
-          chainId && token.equals(WETH[chainId]) ? 'WETH' : token.symbol
-        }/ETH liquidity will be redeemed for underlying assets.`}
+        {`Your Uniswap V1 ${chainId && token.equals(WETH[chainId]) ? 'WETH' : token.symbol
+          }/ETH liquidity will be redeemed for underlying assets.`}
       </DarkGray>
     </AutoColumn>
   )

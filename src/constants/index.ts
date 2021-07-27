@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from 'marsswap-sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 import config from 'frontend-config.json'
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'

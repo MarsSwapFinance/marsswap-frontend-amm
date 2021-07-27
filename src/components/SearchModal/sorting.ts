@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@pancakeswap-libs/sdk'
+import { Token, TokenAmount } from 'marsswap-sdk'
 import { useMemo } from 'react'
 import { MIRROR_TOKENS } from '../../constants'
 import { useAllTokenBalances } from '../../state/wallet/hooks'
@@ -17,7 +17,7 @@ function balanceComparator(balanceA?: TokenAmount, balanceB?: TokenAmount) {
   return 0
 }
 
-function isPinned (symbol: string) {
+function isPinned(symbol: string) {
   return MIRROR_TOKENS.some(token => token.symbol === symbol)
 }
 
